@@ -10,7 +10,7 @@ use Exception;
 use Nette\Application\Application;
 use Nette\Http\IRequest;
 use Nette\Http\IResponse;
-use Symfony\Component\BrowserKit\Client;
+use Symfony\Component\BrowserKit\AbstractBrowser;
 use Symfony\Component\BrowserKit\Request;
 use Symfony\Component\BrowserKit\Response;
 use Throwable;
@@ -18,7 +18,7 @@ use Throwable;
 /**
  * @author Jáchym Toušek <enumag@gmail.com>
  */
-class NetteConnector extends Client
+class NetteConnector extends AbstractBrowser
 {
     /**
      * @var callable
